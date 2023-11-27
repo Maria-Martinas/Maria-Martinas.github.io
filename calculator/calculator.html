@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang ="EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="calculator.css" rel="stylesheet">
+    <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+    <meta name="description" content="Calculator">
+    <meta name="keywords" content="Calculator, multiplication, division, addition, subtraction">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+      <input type="text" value="" id="showResult" disabled="disabled">
+      <button type="button" onclick="clrAll()" aria-label="All clear">AC</button>
+      <button type="button" onclick="clrLast()" aria-label="Last clear">LC</button>
+      <button type="button" class="number-">/</button>
+      <button type="button" class="number">7</button>
+      <button type="button" class="number">8</button>
+      <button type="button" class="number">9</button>
+      <button type="button" class="number-">*</button>
+      <button type="button" class="number">4</button>
+      <button type="button" class="number">5</button>
+      <button type="button" class="number">6</button>
+      <button type="button" class="number-">-</button>
+      <button type="button" class="number">1</button>
+      <button type="button" class="number">2</button>
+      <button type="button" class="number">3</button>
+      <button type="button" class="number-">+</button>
+      <button type="button" class="number">0</button>
+      <button type="button" class="number">.</button>
+      <button type="button" onclick="sum()">=</button>
+    </div>
+    <script src="calculator.js"></script>
+</body>

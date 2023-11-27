@@ -1,0 +1,132 @@
+ body, html {
+    height: 100%;
+     margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+main {
+    position: relative;
+    padding: 1em;
+    background-image:repeating-conic-gradient( at 10% 90%,rgb(242, 243, 237) 0deg 2deg, rgb(213, 222, 225) 2deg 3deg, rgb(238, 242, 237) 3deg 4deg);
+    min-height: 100%;/*for page zoom*/
+    width:100%;
+    margin: auto;
+    color:white;
+}
+section[id*=section-]:not(#section-1) {
+    display:none;
+}
+#section-1 {
+    text-align: center;
+    text-shadow: 1px 1px 3px black,-1px -1px 3px black;
+}
+#section-1 p {
+    font-size: larger;
+    color:rgb(173, 216, 230);
+    
+}
+#section-1 button {
+    display: block;
+    width:100%;
+    padding: 1.5em;
+    margin: 5em 0;
+    border-radius: 3em;
+    background-image: linear-gradient(to right,rgb(173, 216, 230),rgb(224, 194, 156),rgb(173, 216, 230));
+    font-size: 1.3em;
+    color:white;
+    cursor: pointer;
+    border: none;
+    text-shadow: 1px 1px 3px black,-1px -1px 3px black;
+}
+#section-1 button:hover {
+    background-image: linear-gradient(to right,rgb(224, 194, 156),rgb(173, 216, 230) ,rgb(224, 194, 156));
+}
+#section-1 span {
+    display: block;
+    text-align: center;
+    font-size: 5em;
+}
+#section-2 h2 {
+    font-size: 2em;
+    padding:5px;
+    border-left:5px solid lightblue;
+    color:black;
+}
+
+#section-2 p {
+    line-height: 2;
+    font-size: 1.3em;
+    color: black;
+    
+}
+#section-2 {
+    animation: show 1s  ease-in-out;
+    }
+#section-2 span {
+    color:white;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 3px black,-1px -1px 3px black;
+}
+button:not(#start)  {
+    font-size: 1em;
+    display: block;
+    position: absolute;
+    bottom: .5em;
+    right: 1em; 
+    padding: .3em;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    border:none;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px inset white;
+}
+button:hover:not(#start) {
+    background-color: rgba(0,0,0,0.1);
+    color:black;
+}
+
+#section-3 p, #section-4 p, #section-5 p, #section-6 p, #section-7 p {
+    padding: 2.5em 1em;
+    background-color: rgba(112, 102, 102, 0.7);
+    border:5px dashed white;
+    border-radius: 3em 4em 2em 0.5em/5em 7em 1em 4em ;
+    animation: radius 4s ease-in-out alternate infinite, show 2s;
+    font-size: 1.3em;
+}
+@keyframes radius {
+    20% {border-radius: 1em 2em 4em 1.5em/4em 2em 3em 1em ; }
+    40% {border-radius: 4em 1em 2em 2.5em/2em 4em 5em 2em ;}
+    60% {border-radius: 2em 4em 1em 3.5em/2em 6em 1em 1em ; border:1px solid black}
+    80% {border-radius: 3em 1em 4em 0.5em/1em 8em 3em 4em ;}
+    100% {border-radius: 4em 3em 3em 5.5em/3em 5em 8em 2em ;}
+}
+@keyframes show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#section-7 #result_nr {
+    color:black;
+    animation: show 1s 1s ease-in-out forwards;
+    opacity: 0;
+}
+#wrong {
+    opacity: 0;
+    animation: show 1s 1s ease-in-out forwards;
+}
+
+@media screen and (min-width:700px) {
+    main {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:450px) { 
+    button:not(#start) {
+        bottom: 2em;
+        right: 3em;
+        padding: 1em;
+    }
+}

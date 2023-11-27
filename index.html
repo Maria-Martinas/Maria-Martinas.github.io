@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang ="EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ea941c129.js" crossorigin="anonymous"></script>
+    <title>Portfolio Maria Martinas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#main">HOME</a>
+            <a href="#about" class="target">ABOUT</a>
+            <a href="#skills" class="target">SKILLS</a>
+            <a href="#projects" class="target">PROJECTS</a>
+            <a href="#contact" class="target">CONTACT</a>
+        </nav>
+        <button type="button" id="menuHide" onclick="showMobileMenu()">&#9776;</button>
+    </header>
+    <section class="social">
+            <a href="https://www.facebook.com/maria.martinas.31" aria-label="facebook profile"><i class="fa fa-facebook" role="img" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/maria-martinas-9a6163178/" aria-label="linkedin profile"><i class="fa fa-linkedin" role="img" aria-hidden="true"></i></a>
+            <a href="https://github.com/Maria-Martinas" aria-label="github profile"><i class="fa fa-github" role="img" aria-hidden="true"></i></a>
+            <a href="resume.pdf"  aria-label="download" download><i class="fa fa-download" role="img" aria-hidden="true"></i></a>
+    </section>
+    <section id="main">
+        <article>
+            <a href="https://www.facebook.com/maria.martinas.31" aria-label="facebook profile"><i class="fa fa-facebook" role="img" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/maria-martinas-9a6163178/" aria-label="linkedin profile"><i class="fa fa-linkedin" role="img" aria-hidden="true"></i></a>
+            <a href="https://github.com/Maria-Martinas" aria-label="github profile"><i class="fa fa-github" role="img" aria-hidden="true"></i></a>
+            <a href="resume.pdf" class="details" download><i class="fa fa-download" role="img" aria-hidden="true"></i>Download resume</a>
+            <a href="https://goo.gl/maps/ZNPBm8RJcock5F6WA" class="details"><i class="fas fa-map-marker"></i>&nbsp;Raducaneni, Iasi, Romania</a>
+        </article>
+        <article>
+            <h1>Hello!<br> I am <span>Maria Martinas</span> <br> Front-End Developer</h1>
+            <a href="#about" class="details">Read more about me</a>
+        </article>
+    </section>
+    <section id="about" >
+        <p>Passionate about web development, I am an ambitious self&#8209;taught person.<br>
+        Most of my skills are based on web development, that's why I have devoted myself entirely to this field
+        and I like creating user-friendly, mobile-first and accessible web pages. 
+        </p>
+        <h2>Experience</h2>
+        <p>My experience is based only on those projects I created while learning. Check it here: <a href="#projects">My&nbsp;projects</a></p>
+        <h2>Education</h2>
+        <p>Faculty of Geography and Geology, Alexandru Ioan Cuza University, Romania, Iasi</p>
+        <h2>Interests</h2>
+        <p>Traveling, reading and all kind of quizzes.</p>
+    </section>
+    <hr role="img" aria-hidden="true">
+    <section id="skills">
+        <h2>Skills</h2>
+        <div>
+            <div class="circle">JavaScript</div>
+            <div class="circle">CSS</div>
+            <div class="circle">HTML</div>
+            <div class="circle">Sass</div>
+            <div class="circle">Git</div>
+            <div class="circle">GitHub</div>
+        </div>
+    </section>
+    <hr role="img" aria-hidden="true">
+    <section id="projects">
+        <h2>My projects</h2>
+        <div>
+            <section>
+                <a href="site-relax/index.html" aria-label="Entertainment site">
+                    <iframe  src="site-relax/index.html" title=""></iframe>
+                    <span>Entertainment site</span>
+                    <span>Tools used: HTML, CSS, JS</span>
+                </a>
+                <a href="https://github.com/Maria-Martinas/Site-relax"> View source code <span role="img">&#8679;</span></a>
+            </section>
+            <section>
+                <a href="calculator/calculator.html" aria-label="calculator">
+                    <iframe src="calculator/calculator.html" title=""></iframe>
+                    <span>Calculator</span>
+                    <span>Tools used: HTML, CSS, JS, Math.js</span>
+                </a>
+                <a href="https://github.com/Maria-Martinas/Calculator">View source code <span role="img">&#8679;</span></a>
+            </section>
+            <section>
+                <a href="quiz/index.html" aria-label="Number game"> 
+                    <iframe src="quiz/index.html" title=""></iframe>
+                    <span>Number game</span>
+                    <span>Tools used: HTML, CSS, JS</span>
+                </a>
+                <a href="https://github.com/Maria-Martinas/Quiz">View source code <span role="img">&#8679;</span></a>
+            </section>
+        </div>
+    </section>
+    <hr role="img" aria-hidden="true">
+    <section id="contact">
+       <h2>Contact</h2>
+       <ul>
+          <li><a href="mailto:martinasmaria@hotmail.com?subject=I am interested in working with you"><i class="fas fa-envelope"></i> Send me an email</a></li>
+       </ul>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

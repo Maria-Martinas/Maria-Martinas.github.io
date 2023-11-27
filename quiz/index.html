@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang ="EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="quiz.css" rel="stylesheet">
+    <meta name="description" content="A logical game with numbers">
+    <meta name="keywords" content="Number, think, multiply, add, divide, subtract, result">
+    <script src="https://kit.fontawesome.com/0ea941c129.js" crossorigin="anonymous"></script>
+    <title>Numbers' game</title>
+</head>
+<body>
+    <main>
+        <section id="section-1">
+            <h1>Let's play with the numbers!</h1>
+            <p>I might read your mind.</p>
+            <span aria-hidden="true" role="img">&#129335;</span>
+            <button type="button" id="start" onclick="tasks('section-2','start')">Start</button>
+        </section>
+        <section id="section-2">
+            <h2>Think about a number.</h2>
+            <p>It could be any number, but to be easier for you to perform the calculation,
+               I recommend you to choose between 1&nbsp;to&nbsp;10.<br>
+            <span> Do not tell me! Keep it for yourself.</span> <i  class="far fa-grin-beam"  aria-hidden="true"></i> </p>
+             <button onclick="tasks('section-3','section-2')">Next</button>
+        </section>
+        <section id="section-3">
+            <p>Multiply the number you chose by 2.</p>
+            <button onclick="tasks('section-4','section-3')">Next</button>
+        </section>
+        <section id="section-4">
+            <p>Now, add <span id="add_nr"></span></p>
+            <button onclick="tasks('section-5','section-4')">Next</button>
+        </section>
+        <section id="section-5">
+            <p>Divide the result by 2.</p>
+            <button onclick="tasks('section-6','section-5')">Next</button>
+        </section>
+        <section id="section-6">
+            <p>From the number obtained,
+                subtract the number you chose the first time.</p>
+                <button onclick="tasks('section-7','section-6')">Next</button>
+        </section>
+        <section id="section-7">
+            <p>The result is <span id="result_nr"></span>.<br>
+               It is not <span id="wrong"></span>
+               That means you  made a mistake in the calculation. Try again!
+            </p>
+            <button onclick="location='index.html'">Try again</button>
+        </section>
+    </main>
+    
+    <script src="quiz.js"></script>
+</body>
